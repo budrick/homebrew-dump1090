@@ -3,5 +3,5 @@
 ## Install
 ```
 brew tap mannkind/dump1090
-brew install dump1090
+brew install dump1090 --HEAD
 ```
