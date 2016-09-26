@@ -1,6 +1,6 @@
 # Dump1090 Homebrew Tap
 
-Includes formulae for [MalcomRobb](https://github.com/MalcolmRobb/dump1090) and [mutability](https://github.com/MalcolmRobb/dump1090) variations.
+Includes formulae for [MalcomRobb](https://github.com/MalcolmRobb/dump1090) and [mutability](https://github.com/mutability/dump1090) variations.
     
 ## Install
 
