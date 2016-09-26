@@ -10,7 +10,7 @@ class Dump1090 < Formula
 
   env :std
 
-  depends_on "robotastic/hackrf/rtlsdr"
+  depends_on "librtlsdr"
 
   # depends_on "cmake" => :build
   #depends_on :x11 # if your formula requires any X11/XQuartz components
