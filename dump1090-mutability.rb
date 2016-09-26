@@ -29,6 +29,6 @@ class Dump1090Mutability < Formula
     system "cp -r public_html #{prefix}"
 
     # Manually create the symlink
-    system "ln -fs #{prefix}/dump1090.sh /usr/local/bin/dump1090"
+    system "ln -fs #{prefix}/dump1090.sh /usr/local/bin/dump1090-mutability"
   end
 end
