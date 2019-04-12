@@ -12,6 +12,7 @@ class Dump1090Fa < Formula
 
   depends_on "librtlsdr"
   depends_on "libusb"
+  depends_on "libbladerf"
 
   # depends_on "cmake" => :build
   #depends_on :x11 # if your formula requires any X11/XQuartz components
