@@ -21,7 +21,8 @@ class Dump1090Mutability < Formula
     system "make"
 
     # Create a hacky shell script to cd into the working dir, then pass any dump1090 params
-    system "echo \"cd #{prefix} && ./dump1090 \\$@\" > #{prefix}/dump1090-mutability"
+    system "echo \"#!/bin/bash\n\" > #{prefix}/dump1090-mutability"
+    system "echo \"cd #{prefix} && ./dump1090 \\$@\" >> #{prefix}/dump1090-mutability"
     system "chmod +x #{prefix}/dump1090-mutability"
 
     # Manually install
@@ -30,7 +31,7 @@ class Dump1090Mutability < Formula
 
     # Manually create the symlink
     # system "ln -fs #{prefix}/dump1090-mutability /usr/local/bin/dump1090-mutability"
-    bin.install ["#{prefix}/dump1090-mutability"]
+    bin.install "#{prefix}/dump1090-mutability"
 
   end
 end

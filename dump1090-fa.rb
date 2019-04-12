@@ -30,7 +30,8 @@ class Dump1090Fa < Formula
     system "make BLADERF=no"
 
     # Create a hacky shell script to cd into the working dir, then pass any dump1090 params
-    system "echo \"cd #{prefix} && ./dump1090 \\$@\" > #{prefix}/dump1090-fa"
+    system "echo \"#!/bin/bash\n\" > #{prefix}/dump1090-fa"
+    system "echo \"cd #{prefix} && ./dump1090 \\$@\" >> #{prefix}/dump1090-fa"
     system "chmod +x #{prefix}/dump1090-fa"
 
     # Manually install
@@ -39,6 +40,6 @@ class Dump1090Fa < Formula
 
     # Manually create the symlink
     # system "ln -fs #{prefix}/dump1090.sh /usr/local/bin/dump1090-fa"
-    bin.install ["#{prefix}/dump1090-fa"]
+    bin.install "#{prefix}/dump1090-fa"
   end
 end
