@@ -4,7 +4,7 @@ require "formula"
 #                /usr/local/Library/Contributions/example-formula.rb
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 
-class Dump1090FlightAware < Formula
+class Dump1090Fa < Formula
   homepage "https://github.com/flightaware/dump1090"
   head 'git://github.com/flightaware/dump1090.git'
 
